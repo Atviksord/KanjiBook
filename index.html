@@ -19,45 +19,5 @@
         </div>
       </div>
     </div>
-
-    <script type="text/x-mustache-template" id="index-template">
-      <h2>There are {{ count }} Words or Sentances inside </h2>
-      <div class='combo'></div>
-    </script>
-    <script type="text/x-mustache-template" id="potato-template">
-      <h3>{{ name }}</h3>
-      <p>{{ translation }}</p>
-      <p>
-        <button class='btn btn-danger'>Delete</button>
-      </p>
-    </script>
-    <script type="text/x-mustache-template" id="form-template">
-      <legend>Add a sentence or a word</legend>
-      <fieldset>
-        <div class='control-group'>
-          <label class='control-label' for='name'>Word</label>
-          <div class='controls'>
-            <input type='text' class='input-xlarge' id='name'>
-          </div>
-        </div>
-        <div class='control-group'>
-          <label class='control-label' for='translation'>Translation/Meaning</label>
-          <div class='controls'>
-            <input type='text' class='input-xlarge' id='translation'>
-          </div>
-        </div>
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">Add</button>
-        </div>
-      </fieldset>
-    </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/backbone.js"></script>
-    <script src="js/mustache.js"></script>
-    <script src="js/backbone-localstorage.js"></script>
-    <script src="js/KanjiBook.js"></script>
-    <script>$(function() { KanjiBook.boot($('#kassi')); });</script>
   </body>
 </html>
