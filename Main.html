@@ -5,9 +5,7 @@
     <title>KanjiBook in Backbone!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <link href="css/bootstrap.css" rel="stylesheet">
-   
-   
+    <link href="css/bootstrap.css" rel="stylesheet">  
   </head>
   <body>
     <div class='container'>
@@ -16,7 +14,7 @@
        
       </div>
       <div class='row'>
-        <div class='span12' id='breakfast-roll'>
+        <div class='span12' id='kassi'>
           Loading...
         </div>
       </div>
@@ -24,11 +22,11 @@
 
     <script type="text/x-mustache-template" id="index-template">
       <h2>There are {{ count }} Words or Sentances inside </h2>
-      <div class='recipes'></div>
+      <div class='combo'></div>
     </script>
-    <script type="text/x-mustache-template" id="recipe-template">
+    <script type="text/x-mustache-template" id="potato-template">
       <h3>{{ name }}</h3>
-      <p>{{ ingredients }}</p>
+      <p>{{ translation }}</p>
       <p>
         <button class='btn btn-danger'>Delete</button>
       </p>
@@ -43,9 +41,9 @@
           </div>
         </div>
         <div class='control-group'>
-          <label class='control-label' for='ingredients'>Translation/Meaning</label>
+          <label class='control-label' for='translation'>Translation/Meaning</label>
           <div class='controls'>
-            <input type='text' class='input-xlarge' id='ingredients'>
+            <input type='text' class='input-xlarge' id='translation'>
           </div>
         </div>
         <div class="form-actions">
@@ -60,6 +58,6 @@
     <script src="js/mustache.js"></script>
     <script src="js/backbone-localstorage.js"></script>
     <script src="js/KanjiBook.js"></script>
-    <script>$(function() { KanjiBook.boot($('#breakfast-roll')); });</script>
+    <script>$(function() { KanjiBook.boot($('#kassi')); });</script>
   </body>
 </html>
