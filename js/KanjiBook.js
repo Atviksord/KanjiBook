@@ -21,7 +21,7 @@
     template: template('index'),
     initialize: function() {
       this.combo = new KanjiBook.Words(); // nýtt instance af Kanjibook.Words sem er collection til að geyma Orð, Combo er orð + translation 
-      this.combo.on('all', this.render, this);
+      this.combo.on(' all',this.render, this);
       this.combo.fetch();
     },
     render: function() {
@@ -75,7 +75,7 @@
       event.preventDefault();
        
       this.collection.create({ // býr til collection
-        name: this.$('#name').val(), // Firsti glugginn
+        name: this.$('#name'0).val(), // Firsti glugginn
         translation: this.$('#translation').val() // seinni
       });
       this.render();
