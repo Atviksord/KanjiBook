@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>KanjiBook in Backbone!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link href="css/bootstrap.css" rel="stylesheet">
+   
+   
+  </head>
+  <body>
+    <div class='container'>
+      <div class='hero-unit'>
+        <h1>KanjiBook in Backbone!</h1>
+       
+      </div>
+      <div class='row'>
+        <div class='span12' id='breakfast-roll'>
+          Loading...
+        </div>
+      </div>
+    </div>
+
+    <script type="text/x-mustache-template" id="index-template">
+      <h2>There are {{ count }} Words or Sentances inside </h2>
+      <div class='recipes'></div>
+    </script>
+    <script type="text/x-mustache-template" id="recipe-template">
+      <h3>{{ name }}</h3>
+      <p>{{ ingredients }}</p>
+      <p>
+        <button class='btn btn-danger'>Delete</button>
+      </p>
+    </script>
+    <script type="text/x-mustache-template" id="form-template">
+      <legend>Add a sentence or a word</legend>
+      <fieldset>
+        <div class='control-group'>
+          <label class='control-label' for='name'>Word</label>
+          <div class='controls'>
+            <input type='text' class='input-xlarge' id='name'>
+          </div>
+        </div>
+        <div class='control-group'>
+          <label class='control-label' for='ingredients'>Translation/Meaning</label>
+          <div class='controls'>
+            <input type='text' class='input-xlarge' id='ingredients'>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </fieldset>
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/mustache.js"></script>
+    <script src="js/backbone-localstorage.js"></script>
+    <script src="js/KanjiBook.js"></script>
+    <script>$(function() { KanjiBook.boot($('#breakfast-roll')); });</script>
+  </body>
+</html>
